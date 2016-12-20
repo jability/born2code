@@ -26,8 +26,7 @@
 	(spacemacs/set-leader-keys "oh" 'header42-insert)))
 
 (defun born2code/post-init-flycheck ()
-  (spacemacs|use-package-add-hook flycheck
-    :config
+  (with-eval-after-load "flycheck"
       (flycheck-define-checker norminette
         "Norminette checker"
         :command ("norminette" source)
@@ -39,18 +38,3 @@
         :modes (c-mode))
       (add-to-list 'flycheck-checkers 'norminette)
 	  ))
-
-;; (defun born2code/post-init-flycheck ()
-;;   (use-package flycheck
-;;     :config
-;;       (flycheck-define-checker norminette
-;;         "Norminette checker"
-;;         :command ("norminette" source)
-;;         :error-patterns
-;;         ((info line-start "Norme: " (file-name) line-end)
-;;          (warning line-start "Error (line " line "): " (message) line-end)
-;;          (warning line-start "Error (line " line ", col " column "): " (message) line-end) 
-;;          (warning line-start "Error: " (message) line-end))
-;;         :modes (c-mode))
-;;       (add-to-list 'flycheck-checkers 'norminette)
-;; 	  ))
