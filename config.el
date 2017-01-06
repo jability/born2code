@@ -1,6 +1,6 @@
 ;; 42 C style
 (setq-default c-default-style "linux"
-			  c-backspace-function 'backward-delete-char)
+			  c-backspace-function 'backward-delete-char
 			  c-basic-offset 4
 			  c-block-comment-prefix "**"
 			  comment-multi-line t
