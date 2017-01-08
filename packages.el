@@ -27,7 +27,8 @@
          (warning line-start "Error (line " line ", col " column "): " (message) line-end) 
          (warning line-start "Error: " (message) line-end))
         :modes (c-mode))
-      (add-to-list 'flycheck-checkers 'norminette)
+      (add-to-list 'flycheck-checkers 'norminette t)
+	  (flycheck-add-next-checker 'c/c++-clang 'norminette)
 	  ))
 
 (defun born2code/init-xcscope ()
