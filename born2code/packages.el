@@ -3,15 +3,11 @@
 	flycheck
 	(helm-cscope :toggle (configuration-layer/package-usedp 'helm))
 	xcscope
-	;;(list :location local)
-	;;(string :location local)
-	;;(comments :location local)
 	(header :location local)
   ))
 
 (defun born2code/init-header ()
   (use-package header
-	;;:commands (header42-insert)
 	:load-path "private/born2code/local/libs/"
 	:init
 	(spacemacs/set-leader-keys "oh" 'header42-insert)))
