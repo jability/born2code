@@ -1,21 +1,13 @@
-# Private directory
+# born2code spacemacs
 
-The content of this directory is ignored by Git. This is the default place
-where to store your private configuration layers.
+My Spacemacs configuration.
+This includes the `born2code` layer (for efficient work at 42 school)
+and my personal `init.el` dotfile.
 
-To create a new configuration layer:
+## Installation
+First, install spacemacs as usual. See [here](https://github.com/syl20bnr/spacemacs).
 
-    SPC SPC configuration-layer/create-layer RET
+To install this set of custom files, clone this whole repository into your `.emacs.d/private`
+directory. Then add this symlink :
 
-Then enter the name of your configuration in the prompt.
-
-A directory named after the created configuration layer will be created here
-along with template files within it (packages.el and extensions.el, more info
-on the meaning of those files can be found in the [documentation][conf_layers]).
-
-Each created file has further guidance written in them.
-
-Once the configuration is done, restart Emacs to load, install and configure
-your layer.
-
-[conf_layers]: https://github.com/syl20bnr/spacemacs/blob/master/doc/DOCUMENTATION.org#extensions-and-packages
+    ln -s ~/.emacs.d/private/init.el ~/.spacemacs
