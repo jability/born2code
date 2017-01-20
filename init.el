@@ -21,6 +21,7 @@ values."
 	 born2code
 	 (c-c++ :packages (not xcscope)
 			:variables c-c++-enable-clang-support t)
+	 dash
 	 emacs-lisp
 	 (git :variables git-magit-status-fullscreen t)
 	 gtags
