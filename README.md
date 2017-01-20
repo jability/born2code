@@ -1,6 +1,7 @@
 # born2code spacemacs
 
 My Spacemacs configuration.
+
 This includes the `born2code` layer (for efficient work at 42 school)
 and my personal `init.el` dotfile.
 
