@@ -1,5 +1,4 @@
 # born2code spacemacs
-
 My Spacemacs configuration.
 
 This includes the `born2code` layer (for efficient work at 42 school)
@@ -12,3 +11,8 @@ To install this set of custom files, clone this whole repository into your `.ema
 directory. Then add this symlink :
 
     ln -s ~/.emacs.d/private/init.el ~/.spacemacs
+
+## Contents
+
+### additional bindings
+`SPC o h`: insert 42 header on top of file
