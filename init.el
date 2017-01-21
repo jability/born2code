@@ -14,7 +14,7 @@ values."
    dotspacemacs-configuration-layers
    '(
 	 asm
-	 (auto-completion :enabled-for c-c++
+	 (auto-completion :enabled-for c-c++ ocaml
 					  :variables auto-completion-return-key-behavior nil
 					  auto-completion-tab-key-behavior 'complete
 					  auto-completion-enable-snippets-in-popup t)
