@@ -1,3 +1,13 @@
+;; born2code variables
+
+(defvar 42-header-package-load t
+  "If nil the 42 header package will never be loaded.")
+
+
+(defvar 42-header-update-enable nil
+  "If nil the 42 header will never update when the file is saved")
+
+
 ;; 42 C style
 (setq-default c-default-style "linux"
 			  c-backspace-function 'backward-delete-char

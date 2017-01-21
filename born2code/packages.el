@@ -8,6 +8,7 @@
 
 (defun born2code/init-header ()
   (use-package header
+	:if 42-header-package-load
 	:load-path "private/born2code/local/libs/"
 	:init
 	(spacemacs/set-leader-keys "oh" 'header42-insert)))

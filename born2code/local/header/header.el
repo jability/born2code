@@ -28,7 +28,8 @@
 ;;(global-set-key (kbd "C-c C-h") 'header-insert)
 ;;(setq write-file-hooks (cons 'header-update write-file-hooks))
 (defun better_header_update ()
-   (add-hook 'before-save-hook #'header-update))
+  (when 42-header-update-enable
+	(add-hook 'before-save-hook #'header-update nil t)))
 (add-hook 'c-mode-hook #'better_header_update)
 
 (set 'user-login (let ((login (getenv "USER")))
