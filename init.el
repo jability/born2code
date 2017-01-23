@@ -160,6 +160,10 @@ values."
   ;;looks
   (setq-default line-spacing 0.1)
   (setq powerline-default-separator 'alternate)
+  ;; highlight C functions
+  (font-lock-add-keywords
+   'c-mode
+   '(("\\<\\(\\sw+\\) ?(" 1 'font-lock-function-name-face)))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
