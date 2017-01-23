@@ -163,7 +163,8 @@ values."
   ;; highlight C functions
   (font-lock-add-keywords
    'c-mode
-   '(("\\<\\(\\sw+\\) ?(" 1 'font-lock-function-name-face)))
+   '(("\\<\\(\\sw+\\) ?(" 1 'font-lock-function-name-face))
+   t)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
