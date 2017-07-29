@@ -148,8 +148,6 @@ values."
   ;; custom bindings
   (define-key evil-insert-state-map (kbd "TAB") 'tab-to-tab-stop)
   (spacemacs/set-leader-keys "oa" 'org-annotate-file)
-  ;; projectile
-  (add-to-list 'projectile-project-root-files ".travis.yml")
   ;; hooks
   (add-hook 'makefile-mode-hook 'whitespace-mode)
   ;; highlight
